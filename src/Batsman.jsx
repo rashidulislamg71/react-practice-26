@@ -35,6 +35,7 @@ function Batsman() {
     }
   };
 
+
   return (
     <div>
       <h1>Runs</h1>
