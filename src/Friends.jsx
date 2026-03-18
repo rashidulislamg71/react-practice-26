@@ -1,14 +1,14 @@
 import React, { use } from "react";
+import Friend from "./Friend";
 
 function Friends({ usersPromise }) {
   const friends = use(usersPromise);
-  console.log(friends);
-
+  
   return (
     <>
-      {friends.map((data) => (
-        <ul key={data.id}>
-          <li>{data.email}</li>
+      {friends.map((friend) => (
+        <ul key={friend.id}>
+          <Friend friend={friend} />
         </ul>
       ))}
     </>
